@@ -27,7 +27,7 @@ class Detector:
     def __init__(self):
         global cvNet
         cvNet = cv.dnn.readNetFromTensorflow('model/reproduceflipfrozen_inference_graph.pb',
-                                             'model/ssd_mobilenetv2_cv.pbtxt')
+                                             'model/newcv_ssd.pbtxt')
 
     def detectObject(self, imName):
         img = cv.cvtColor(numpy.array(imName), cv.COLOR_BGR2RGB)
