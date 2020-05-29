@@ -26,8 +26,8 @@ classNames = {0: 'sheath_blight', 1: 'stem_borer', 2: 'rice_brownspot'}
 class Detector:
     def __init__(self):
         global cvNet
-        cvNet = cv.dnn.readNetFromTensorflow('model/newssdfrozen_inference_graph.pb',
-                                             'model/newssdfinale.pbtxt')
+        cvNet = cv.dnn.readNetFromTensorflow('model/reproduceflipfrozen_inference_graph.pb',
+                                             'model/lasttry.pbtxt')
 
     def detectObject(self, imName):
         img = cv.cvtColor(numpy.array(imName), cv.COLOR_BGR2RGB)
