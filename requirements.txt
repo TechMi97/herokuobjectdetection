@@ -1,4 +1,4 @@
-opencv-python==4.2.0.34
+opencv-python==3.4.9.33
 numpy
 flask
 pillow
