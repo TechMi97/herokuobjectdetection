@@ -39,7 +39,7 @@ class Detector:
 
         for i in range(detections.shape[2]):
             confidence = detections[0, 0, i, 2]
-            if confidence > 0.4:
+            if confidence > 0.3:
                 class_id = int(detections[0, 0, i, 1])
 
                 xLeftBottom = int(detections[0, 0, i, 3] * cols)
